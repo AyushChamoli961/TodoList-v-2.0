@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB",{useNewurlParser:true})
+mongoose.connect("mongodb+srv://AyushChamoli:eQQ76EcUZVQFV6xB@cluster0.hj0m1co.mongodb.net/todolistDB",{useNewurlParser:true})
 const workItems = [];
 
 const taskSchema = new mongoose.Schema({
